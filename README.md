@@ -61,3 +61,12 @@ There are 3 files:
 - Large (100,000 records)
 - Medium (10,000 records)
 - Small (1,000 records)
+
+### How to run locally (Look at atlan_collect/atlan_demo.mp4 for a video demo.)
+
+1. After cloning the repo, move into the atlan_collect dir: `cd atlan_collect`
+2. Activate the virtual env: `source atlan-venv/bin/activate`
+3. Start the redis server in one terminal: `redis-server`
+4. In another terminal, starting a python-rq worker: `rq worker`
+5. In one more terminal, start the flask app: `flask run`
+6. Now, the app is ready to be used. Use an API client (like Postman), and start making requests to the API endpoints mentioned above.
